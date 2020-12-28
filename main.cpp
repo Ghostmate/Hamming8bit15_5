@@ -122,31 +122,6 @@ void vHammingCheck_2(uint8_t *pcBlock, uint8_t *hamm_received)
   &pcBlock[14],
   &pcBlock[15]
   };
-  /*
-  for(uint8_t i = 0; i < 21; i = i + 2)
-  {
-    *ui8HammArr[0] ^= *ui8HammArr[i];
-  }
-  for(uint8_t i = 1; i < 21; i = i + 4)
-  {
-      *ui8HammArr[1] ^= *ui8HammArr[i];
-      *ui8HammArr[1] ^= *ui8HammArr[i+1];
-  }
-  *ui8HammArr[3] ^= *ui8HammArr[4] ^
-  *ui8HammArr[5] ^ *ui8HammArr[6] ^
-  *ui8HammArr[11] ^ *ui8HammArr[12] ^
-  *ui8HammArr[13] ^ *ui8HammArr[14] ^
-  *ui8HammArr[19] ^ *ui8HammArr[20];
-
-  for(uint8_t i = 7; i < 16; i++)
-  {
-    *ui8HammArr[7] ^= *ui8HammArr[i];
-  }
-  for(uint8_t i = 15; i < 21; i++)
-  {
-    *ui8HammArr[15] ^= *ui8HammArr[i];
-  }
-  */
   uint8_t k = 22;
   for(uint8_t i = 0; i<= 7; i++)
   {
